@@ -1,3 +1,12 @@
+### 迭代
+* forEach
+	* 单纯的迭代
+	* 不修改原内容
+* map
+	* 返回新内容
+	* 不修改原内容
+
+Array会修改原数组的方法sort,push,pop,unshift,shift,reverse,splice
 ### Array
 
 -------------array修改器方法--------------------
@@ -22,6 +31,11 @@
 	* 删除或替换现有元素或添加新元素
 	* 修改原数组
 	* 返回值为 数组形式的被修改的内容
+
+* arr.reverse()
+	* 颠倒元素
+	* 返回值为颠倒后的元素
+	* 修改原数组
 
 -------------array访问方法----------------------
 
@@ -56,6 +70,9 @@
 * str.concat()
 	* 返回值为 一个 或 多个字符串的拼接
 
+* str.repeat()
+	* 返回值为参数个原字符串
+
 * str.includes()
 	* 用于判断字符串是否包含该参数
 	* 返回值为 true 或者 false
@@ -84,3 +101,47 @@
 * str.substring()
 	* 返回值为 由开始参数和结束参数决定的字符串子集
 	* 不修改原数组
+
+### Object方法
+* Object.assign()
+	* 将可枚举属性值复制到目标对象
+	* 返回值为 修改后的目标对象
+	* 会修改原对象
+
+* Object.entries()
+	* 返回值为 一个由自身可枚举属性的键值对数组
+	* 不修改原对象
+
+* Object.keys()
+	* 返回值为 自身对象可枚举属性的属性名组成的数组
+
+* Object.values()
+	* 返回值为 自身对象可枚举属性的属性值组成的数组
+
+### 题目记录
+* 当前域的cookie不全都是可以通过js直接获取的
+* localStorage不支持设置过期时间，而是永久有效，sessionStorage随着网页关闭消失
+* Object.assign(obj1,obj2)实现的是对象的浅拷贝
+* Object.keys()不可遍历初对象原型链上的属性
+* 使用 event.cancelBubble 取消冒泡
+* 严格模式下：
+	* 变量必须声明再使用
+	* 变量不允许重复声明
+	* 全局执行上下文中和全局执行上下文中的函数的this指向不再是window对象
+	* 不在支持arguments
+* null == undefined // true
+* null === undefined // false
+* null === null //true
+* undefined === undefined // ture
+* Infinity + 1 === Infinity
+* 0.1 + 0.2 // 0.30000000000000004
+* typeof NaN // number
+* typeof Function // function
+* typeof Object // function
+* typeof {} // object
+* "a" - 1 //NaN
+* Function instanceof Object // true
+* Object instanceod Function // true
+* 定义的promise函数内部代码立刻执行
+* for...in... 可以遍历对象每一个可枚举属性，包括原型链上的可枚举属性
+

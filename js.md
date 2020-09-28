@@ -144,4 +144,11 @@ Array会修改原数组的方法sort,push,pop,unshift,shift,reverse,splice
 * Object instanceod Function // true
 * 定义的promise函数内部代码立刻执行
 * for...in... 可以遍历对象每一个可枚举属性，包括原型链上的可枚举属性
-
+* 使用new操作符时，构造函数内的this就指向相应的实例化对象
+* ^是正则表达式匹配字符串开始位置
+* $是正则表达式匹配字符串结束位置
+* 400（错误请求）服务器不理解请求的语法
+* 401 (身份验证错误)  此页要求授权
+* 403（禁止）服务器拒绝请求
+* 404（未找到）服务器找不到请求的网页
+* HTML页面加载完毕触发 window.onload 事件

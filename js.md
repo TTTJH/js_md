@@ -323,3 +323,15 @@ Array会修改原数组的方法sort,push,pop,unshift,shift,reverse,splice
 * Render Tree 就是Dom Tree + 样式体
 * 装箱：把基本数据类型 转换成对应的 引用数据类型的操作
 * 拆箱：把 引用数据类型 转换成 基本数据类型 的操作
+* forEach只能遍历数组
+* Http本质是无状态的，使用cookies可以创建有状态的会话
+* XMLHttpRequest是HTTP的API
+* HTTP缓存是一种保存资源副本并在下次请求时直接使用该副本的技术,有利于缓解服务压力
+* HTTP缓存但重新验证，每次有请求发出，缓存会将此请求发到服务器，服务器会验证请求所述缓存是否过期，若未过期（返回304），则缓存才使用本地缓存副本。
+* CORS(跨域资源共享机制)
+* 跨源域资源共享（ CORS ）机制允许 Web 应用服务器进行跨源访问控制，从而使跨源数据传输得以安全进行。
+* 什么情况下需要CORS?
+	* XMLHttpRequest或Fetch发起的跨源HTTP请求
+	* Web字体（css中通过@font-face使用跨源字体资源）
+	* WebGL贴图
+* 

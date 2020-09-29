@@ -254,4 +254,72 @@ Array会修改原数组的方法sort,push,pop,unshift,shift,reverse,splice
 	* 客户端将sessionid存放在本地cookie中
 	* 下次访问接口携带该cookie
 	* 服务器比对session验证该cookie，判断用户登入
-
+* 事件传播三个阶段：
+	* 捕获阶段：	
+		* 在捕获阶段时从最外层的祖先元素，向目标元素进行事件的捕获(一般不会开启)
+	* 目标阶段：
+		* 事件捕获到目标元素，捕获结束开始在目标元素上触发事件
+	* 冒泡阶段：
+		* 事件从目标元素向其祖先元素传递，依次触发祖先元素上的事件
+	* 捕获阶段默认不开启，可通过设置addEventListener第三个参数为true来进行捕获和冒泡的切换
+* web服务器三要素：
+	* 协议(http,https)
+	* 端口
+	* 域名	
+	* 三要素全部一致才算同源
+* a标签可以包括除了自身任何元素
+* h5常用标签：
+	* <header></header>
+	* <nav></nav>
+	* <section></section>
+	* <aside></aside>
+	* <footer></footer>
+	* <article></article>
+* canvas
+	* 将 渲染阶段 的开销转嫁到 计算阶段 之上
+	* 使用 多个分层 的canvas绘制复杂场景
+	* 不要频繁设置绘图上下文的font属性
+	* 将固定的内容预先绘制在离屏canvas上以提高性能
+* css权重：
+	* id选择器：100
+	* 类选择器：10
+	* 元素选择器：1
+* white-space:nowrap  元素内文字永远在一行内显示
+* BEM:css命名规范
+* 阻止事件默认行为：
+	* preventDefault()
+* 阻止冒泡：
+	* stopPropagation() w3c标准的阻止冒泡
+	* cancelBubble()  ie的阻止冒泡
+* js模块化：
+	* ES6 Module规范：
+		* 模块功能主要由 export 和 import 两个命令构成。
+		* export 用于定义模块的对外接口
+		* import 用于输入其他模块提供的功能
+		* 浏览器 和 服务端 通用
+	* CommonJS规范：
+		* module.exports 或者 exports 对外暴露接口
+		* require命令加载其他模块
+		* 主要用于服务端(nodejs)
+	* AMD 规范：
+		* Asynchronous Moudles Definition   异步模块定义规范
+		* 该方案的实现者是RequireJS
+		* 通过define定义模块
+		* 通过require加载模块
+* Canvas 和 SVG 都可以使用 javascript 绘制
+* 如何提高网页加载速度
+	* 部分操作设置 防抖 和 节流
+	* 进行图片懒加载
+	* 使用雪碧图
+	* 增加服务器带宽
+* box-sizing:
+	* content-box:
+		* 默认值，其中设置的width和height只包含内容的宽高，不包含内边距，边框，外边距。
+		* 如果设置padding是在盒子的外部
+	* border-box:
+		* 其设置的width和height是包含content,padding,border，但是不包含margin的。
+		* 如果设置了width和height的值，就相当于设置了content和padding
+* Dom Tree 就是由各种dom节点组成的dom结构
+* Render Tree 就是Dom Tree + 样式体
+* 装箱：把基本数据类型 转换成对应的 引用数据类型的操作
+* 拆箱：把 引用数据类型 转换成 基本数据类型 的操作
